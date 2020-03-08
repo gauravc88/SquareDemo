@@ -19,7 +19,6 @@
 		071E85C424144BD8005B9E28 /* EmployeeImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071E85C324144BD8005B9E28 /* EmployeeImageFetcher.swift */; };
 		071E85C62414525A005B9E28 /* ImageCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071E85C52414525A005B9E28 /* ImageCacher.swift */; };
 		071E85C8241453A3005B9E28 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071E85C7241453A3005B9E28 /* ImageCache.swift */; };
-		071E85CE24145B37005B9E28 /* EmployeesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071E85CD24145B37005B9E28 /* EmployeesDataModel.swift */; };
 		071E85D5241460E2005B9E28 /* NoEmployeesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071E85D4241460E2005B9E28 /* NoEmployeesView.swift */; };
 		077DBE8D24146A2C001B8072 /* SomethingWentWrongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077DBE8C24146A2C001B8072 /* SomethingWentWrongView.swift */; };
 		077DBE9024147076001B8072 /* ImageCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077DBE8F24147076001B8072 /* ImageCacheTests.swift */; };
@@ -28,6 +27,7 @@
 		077DBE9B24147910001B8072 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077DBE9A24147910001B8072 /* MockURLSession.swift */; };
 		077DBE9D24147B14001B8072 /* MockImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077DBE9C24147B14001B8072 /* MockImageCache.swift */; };
 		077DBEA02414C9DD001B8072 /* EmployeesDataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077DBE9F2414C9DD001B8072 /* EmployeesDataModelTests.swift */; };
+		077DBEA224157EE8001B8072 /* EmployeesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077DBEA124157EE8001B8072 /* EmployeesDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,6 @@
 		071E85C324144BD8005B9E28 /* EmployeeImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeImageFetcher.swift; sourceTree = "<group>"; };
 		071E85C52414525A005B9E28 /* ImageCacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageCacher.swift; path = Utilities/ImageCacher.swift; sourceTree = "<group>"; };
 		071E85C7241453A3005B9E28 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Utilities/ImageCache.swift; sourceTree = "<group>"; };
-		071E85CD24145B37005B9E28 /* EmployeesDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmployeesDataModel.swift; path = EmployeeDirectory/Models.swift/EmployeesDataModel.swift; sourceTree = SOURCE_ROOT; };
 		071E85D4241460E2005B9E28 /* NoEmployeesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoEmployeesView.swift; sourceTree = "<group>"; };
 		077DBE8C24146A2C001B8072 /* SomethingWentWrongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingWentWrongView.swift; sourceTree = "<group>"; };
 		077DBE8F24147076001B8072 /* ImageCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheTests.swift; sourceTree = "<group>"; };
@@ -66,6 +65,7 @@
 		077DBE9A24147910001B8072 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		077DBE9C24147B14001B8072 /* MockImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockImageCache.swift; sourceTree = "<group>"; };
 		077DBE9F2414C9DD001B8072 /* EmployeesDataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesDataModelTests.swift; sourceTree = "<group>"; };
+		077DBEA124157EE8001B8072 /* EmployeesDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +145,7 @@
 		071E85CC24145AA2005B9E28 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				071E85CD24145B37005B9E28 /* EmployeesDataModel.swift */,
+				077DBEA124157EE8001B8072 /* EmployeesDataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -332,9 +332,9 @@
 				071E85C8241453A3005B9E28 /* ImageCache.swift in Sources */,
 				071E859524142126005B9E28 /* AppDelegate.swift in Sources */,
 				071E85BA24142890005B9E28 /* EmployeeListCell.swift in Sources */,
-				071E85CE24145B37005B9E28 /* EmployeesDataModel.swift in Sources */,
 				071E85C024143D13005B9E28 /* EmployeesFetcher.swift in Sources */,
 				071E85BE24143CE8005B9E28 /* EmployeesResponse.swift in Sources */,
+				077DBEA224157EE8001B8072 /* EmployeesDataModel.swift in Sources */,
 				071E85D5241460E2005B9E28 /* NoEmployeesView.swift in Sources */,
 				077DBE8D24146A2C001B8072 /* SomethingWentWrongView.swift in Sources */,
 				071E85BC2414335C005B9E28 /* Employee.swift in Sources */,
