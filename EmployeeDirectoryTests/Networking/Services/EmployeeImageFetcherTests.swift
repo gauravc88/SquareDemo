@@ -45,10 +45,7 @@ class EmployeeImageFetcherTests: XCTestCase {
         XCTAssert(mockURLSession.dataTaskCalled, "Network call for image download should be made")
     }
     
-    func testImageNotInCacheAndNoImageFromNetwork() {
-        let imageDataString = "Some Image Data"
-        let imageData = imageDataString.data(using: .utf8)
-        
+    func testImageNotInCacheAndNoImageFromNetwork() {        
         mockURLSession.dataToReturn = nil
         mockURLSession.errorToReturn = EmployeesAPIError.unknownError
         
