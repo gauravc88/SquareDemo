@@ -28,6 +28,11 @@
 		077DBE9D24147B14001B8072 /* MockImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077DBE9C24147B14001B8072 /* MockImageCache.swift */; };
 		077DBEA02414C9DD001B8072 /* EmployeesDataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077DBE9F2414C9DD001B8072 /* EmployeesDataModelTests.swift */; };
 		077DBEA224157EE8001B8072 /* EmployeesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077DBEA124157EE8001B8072 /* EmployeesDataModel.swift */; };
+		077DBED4243CEC3D001B8072 /* EmployeeDirectory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 077DBED2243CEC3D001B8072 /* EmployeeDirectory.xcdatamodeld */; };
+		077DBED6243CED8D001B8072 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077DBED5243CED8D001B8072 /* CoreDataManager.swift */; };
+		077DBED8243CF9D3001B8072 /* EmployeeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077DBED7243CF9D3001B8072 /* EmployeeDetailsViewController.swift */; };
+		077DBEDA243CFACD001B8072 /* EmployeeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077DBED9243CFACD001B8072 /* EmployeeTitleView.swift */; };
+		077DBEDC243D0058001B8072 /* EmployeeCommunicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077DBEDB243D0058001B8072 /* EmployeeCommunicationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +71,11 @@
 		077DBE9C24147B14001B8072 /* MockImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockImageCache.swift; sourceTree = "<group>"; };
 		077DBE9F2414C9DD001B8072 /* EmployeesDataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesDataModelTests.swift; sourceTree = "<group>"; };
 		077DBEA124157EE8001B8072 /* EmployeesDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesDataModel.swift; sourceTree = "<group>"; };
+		077DBED3243CEC3D001B8072 /* EmployeeDirectory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EmployeeDirectory.xcdatamodel; sourceTree = "<group>"; };
+		077DBED5243CED8D001B8072 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		077DBED7243CF9D3001B8072 /* EmployeeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailsViewController.swift; sourceTree = "<group>"; };
+		077DBED9243CFACD001B8072 /* EmployeeTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTitleView.swift; sourceTree = "<group>"; };
+		077DBEDB243D0058001B8072 /* EmployeeCommunicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCommunicationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +148,9 @@
 				071E85B6241421A1005B9E28 /* EmployeeListViewController.swift */,
 				071E85D4241460E2005B9E28 /* NoEmployeesView.swift */,
 				077DBE8C24146A2C001B8072 /* SomethingWentWrongView.swift */,
+				077DBED7243CF9D3001B8072 /* EmployeeDetailsViewController.swift */,
+				077DBED9243CFACD001B8072 /* EmployeeTitleView.swift */,
+				077DBEDB243D0058001B8072 /* EmployeeCommunicationView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -164,6 +177,7 @@
 			children = (
 				071E85BB2414335C005B9E28 /* Employee.swift */,
 				071E85BD24143CE8005B9E28 /* EmployeesResponse.swift */,
+				077DBED2243CEC3D001B8072 /* EmployeeDirectory.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -182,6 +196,7 @@
 			children = (
 				071E85C52414525A005B9E28 /* ImageCacher.swift */,
 				071E85C7241453A3005B9E28 /* ImageCache.swift */,
+				077DBED5243CED8D001B8072 /* CoreDataManager.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -334,13 +349,18 @@
 				071E85BA24142890005B9E28 /* EmployeeListCell.swift in Sources */,
 				071E85C024143D13005B9E28 /* EmployeesFetcher.swift in Sources */,
 				071E85BE24143CE8005B9E28 /* EmployeesResponse.swift in Sources */,
+				077DBEDC243D0058001B8072 /* EmployeeCommunicationView.swift in Sources */,
 				077DBEA224157EE8001B8072 /* EmployeesDataModel.swift in Sources */,
 				071E85D5241460E2005B9E28 /* NoEmployeesView.swift in Sources */,
 				077DBE8D24146A2C001B8072 /* SomethingWentWrongView.swift in Sources */,
 				071E85BC2414335C005B9E28 /* Employee.swift in Sources */,
 				071E85C62414525A005B9E28 /* ImageCacher.swift in Sources */,
 				071E85B7241421A1005B9E28 /* EmployeeListViewController.swift in Sources */,
+				077DBED4243CEC3D001B8072 /* EmployeeDirectory.xcdatamodeld in Sources */,
+				077DBED8243CF9D3001B8072 /* EmployeeDetailsViewController.swift in Sources */,
+				077DBED6243CED8D001B8072 /* CoreDataManager.swift in Sources */,
 				071E85C424144BD8005B9E28 /* EmployeeImageFetcher.swift in Sources */,
+				077DBEDA243CFACD001B8072 /* EmployeeTitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +621,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		077DBED2243CEC3D001B8072 /* EmployeeDirectory.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				077DBED3243CEC3D001B8072 /* EmployeeDirectory.xcdatamodel */,
+			);
+			currentVersion = 077DBED3243CEC3D001B8072 /* EmployeeDirectory.xcdatamodel */;
+			path = EmployeeDirectory.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 071E858924142126005B9E28 /* Project object */;
 }
