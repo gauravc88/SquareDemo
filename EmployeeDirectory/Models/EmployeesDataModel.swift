@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreData
 
 struct EmployeesDataModel {
     private let employeesFetcher: EmployeesFetcher
@@ -21,8 +22,30 @@ struct EmployeesDataModel {
             case .failure(let error):
                 completionHandler(nil, error)
             case .success(let employeesData):
+                self.persistEmployeeData(employees: employeesData)
                 completionHandler(employeesData, nil)
             }
         })
+    }
+    
+    private func persistEmployeeData(employees: [Employee]) {
+        let context = CoreDataManager.shared.persistentContainer.viewContext
+        // TODO: Add code to update/delete before inserting new Entities.
+        
+        for employee in employees {
+            // Save into coreData
+            let entity = NSEntityDescription.insertNewObject(forEntityName: "Employee", into: context) as! Employee
+            
+            entity.uuid = employee.uuid
+            entity.full_name = employee.full_name
+            entity.photo_url_small = employee.photo_url_small
+            entity.team = employee.team
+        }
+        
+        do {
+            try context.save()
+        } catch {
+            fatalError("Issue with save")
+        }
     }
 }
